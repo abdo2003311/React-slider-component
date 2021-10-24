@@ -1,0 +1,75 @@
+$arrowWidth : 10px;
+$arrowHeight : 1px;
+$arrowColors : rgb(104, 34, 195);
+$arrowTop : 6.5px;
+body{
+    overflow-x: hidden;
+}
+.slider{
+    text-align: center;
+    position: relative;
+    .slidesWrapper{
+        display: flex;
+        transition: 1s;
+    }
+    .left{
+        position: absolute;
+        transform: translate(0, -50%);
+        left: 0;
+        width: 20px;
+        height: 30px;
+        &:hover{
+            cursor: pointer;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $arrowWidth;
+            height: $arrowHeight;
+            background:  $arrowColors;
+            transform: rotate(-45deg);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top:$arrowTop;
+            left: 0;
+            width: $arrowWidth;
+            height: $arrowHeight;
+            background:  $arrowColors;
+            transform: rotate(45deg);
+        }
+        }
+    .right{
+        position: absolute;
+        transform: translate(0, -50%);
+        right: 0;
+        width: 20px;
+        height: 30px;
+        &:hover{
+            cursor: pointer;
+        }
+        &::before{
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: $arrowWidth;
+            height: $arrowHeight;
+            background: $arrowColors;
+            transform: rotate(45deg);
+        }
+        &::after{
+            content: "";
+            position: absolute;
+            top: $arrowTop;
+            right: 0;
+            width: $arrowWidth;
+            height: $arrowHeight;
+            background:  $arrowColors;
+            transform: rotate(-45deg);
+        }
+    }
+}
