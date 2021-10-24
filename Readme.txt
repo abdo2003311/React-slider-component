@@ -20,4 +20,3 @@ use the slider component and give it a slides props which you should give it an 
                   <Slide html = {<div>slide 3</div>} sliderId = {2} />,
                   <Slide html = {<div>slide 4</div>} sliderId = {2} />
                   ]} />
-     
