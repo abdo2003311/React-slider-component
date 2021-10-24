@@ -1,7 +1,7 @@
 import React from 'react';
 import './sliderComponent.css';
 
-let sliderId = 0;
+let sliderId = 1;
 let slidesWrapperArray = [];
 let slidesArray = [];
 let sliders = [];
